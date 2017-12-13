@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Collective Intelligence</title>
+	
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css" />
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <!-- <script type="text/javascript" src="js/bee.js"></script> -->
+    <script type="text/javascript" src="js/Chart.bundle.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script src="js/"></script>
+    
+</head>
+<body>
+
+	<header>
+	  <!--  <h1>Ройовий алгоритм</h1> -->
+	</header>
+
+
+    <nav>
+        <ul class="main_menu">
+            <li class="menu_li"><a href="main.html">Головна</a></li>
+            <li class="menu_li"><a href="#info" id = "zah_info">Загальна інформація</a>
+                <ul class="secont_ul">
+                    <li><a href="#" id = "ant_algo" text="Мурашиний алгоритм">Мурашиний алгоритм</a></li>
+                    <li><a href="#" id = "bee_algo" text="Бджолиний алгоритм">Бджолиний алгоритм</a></li>
+                    <li><a href="#" id = "bats_algo" text="Алгоритм алгоритм">Алгоритм кажанів</a></li>
+                </ul>
+            </li>
+            <li class="menu_li"><a href="index.html">Приклади роботи</a>
+                <ul class="secont_ul_second">
+                    <li><a href="index.html#ants_algo">Мурашиний алгоритм</a></li>
+                    <li><a href="index.html#bee_algo">Бджолиний алгоритм</a></li>
+                    <li><a href="#">Алгоритм кажанів</a></li>
+                </ul>
+            </li>
+            <li class="menu_li"><a href="#optimization_tasks">Оптимізаційні задачі</a></li>
+            <!-- <li class="menu_li"><a href="#developer">Про розробника</a></li> -->
+        </ul>
+    </nav>
+
+
+
+<section id="info">
+    <h2 class="info_title" id = "info_title">Оптимізаціййні задачі</h2>
+    <iframe id="frame_info" src="doc/zdmgb.pdf" frameborder="0" gesture="media" allowfullscreen frameborder="0"></iframe>
+</section>
+
+
+
+
+
+
+
+
+<footer>
+    <h4>Всі права захищено</h4>
+    <p>Черкаси, 2017</p>
+    <p>aslavasalijj@gmail.com</p>
+</footer>
+
+
+<div class="MoveUp">
+     <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</div>
+
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+      new WOW().init();
+</script>
+    <script>
+      $(document).ready(
+          function() {
+              $("html").niceScroll({cursorcolor:"#000"});
+          }
+      );
+    </script>
+
+<!-- <script>
+      $(document).ready(function(){
+          $("nav").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+              top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+          });
+        });
+    </script> -->
+
+
+</body>
+</html>

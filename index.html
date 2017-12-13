@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Collective Intelligence</title>
+    	
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    	<link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="img/ant.jpg" type="img/ico.jpg">
+        
+
+
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+        <script type="text/javascript" src="js/Chart.bundle.js"></script>
+        <script type="text/javascript" src="js/utils.js"></script>
+        <script type="text/javascript" src="js/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="js/Chart.js"></script>
+        <script type="text/javascript" src="js/Chart.min.js"></script>
+        <script src="js/"></script>
+        
+    </head>
+    <body>
+
+    	<header>
+    	  <!--  <h1>Ройовий алгоритм</h1> -->
+    	</header>
+
+
+        <nav>
+            <ul class="main_menu">
+                <li class="menu_li"><a href="main.html">Головна</a></li>
+                <li class="menu_li"><a href="info.html" id = "zah_info">Загальна інформація</a>
+                    <ul class="secont_ul">
+                        <li><a href="info.html#ant_algo" id = "ant_algo" text="Мурашиний алгоритм">Мурашиний алгоритм</a></li>
+                        <li><a href="info.html#bee_algo" id = "bee_algo" text="Бджолиний алгоритм">Бджолиний алгоритм</a></li>
+                        <li><a href="info.html#bats_algo" id = "bats_algo" text="Алгоритм алгоритм">Алгоритм кажанів</a></li>
+                    </ul>
+                </li>
+                <li class="menu_li"><a href="#work_example">Приклади роботи</a>
+                    <ul class="secont_ul_second">
+                        <li><a href="index.html#ants_algo">Мурашиний алгоритм</a></li>
+                        <li><a target="_self" href="index.html#bees_algo">Бджолиний алгоритм</a></li>
+                        <li><a href="#">Алгоритм кажанів</a></li>
+                    </ul>
+                </li>
+                <li class="menu_li"><a href="#">Оптимізаційні задачі</a></li>
+                <li class="menu_li"><a href="#d">Про розробника</a></li>
+            </ul>
+        </nav>
+
+
+
+        <section id="ants_algo">
+            <h2>Приклади роботи Ant Colony</h2>
+
+            <div id="tabs">
+                <div class="tab whiteborder">Функція користувача</div>
+                <div class="tab">Тестова функція</div>
+                <!-- <div class="tab">Параметри</div> -->
+                <div class="tab">Приклад</div>
+
+                <div class="tabContent">
+                    <table >
+                            <tr>
+                                <td><p>Функція</p></td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td><p>F=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Похибка</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>e=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Розмірність задачі</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>d=</p></td>
+                            <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Розмірність рою</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>s=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Простір пошуку</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td> <button>Розв'язок</button></td>
+                                <td> </td>
+                            </tr>
+                        </table>       
+
+                </div>
+                <div class="tabContent">
+                    <table >
+                        <tr>
+                            <td><p>Функція</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p>F=</p></td>
+                            <td><select name="" id="sel">
+                                    <option id="sfera" value="">Сферична</option>
+                                    <option id="elip" value="">Еліптична</option>
+                                    <option id="shef" value="">Швефела </option>
+                                    <option id="rozen" value="">Розенброка</option>
+                                    <option id="rastr" value="">Растригіна</option>
+                                </select></td>
+                            <td><td><img class="form" id="for_img" src="" alt="formula"></td></td>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td><td><img class="graf" id="funk_img" src="" alt="grafic"></td></td>
+                        </tr>
+                        <tr>
+                            <td><p>Похибка</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p>e=</p></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Розмірність задачі</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p>d=</p></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Розмірність рою</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><p>s=</p></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Простір пошуку</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td> <button>Розв'язок</button></td>
+                            <td> </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+<!--                 <div class="tabContent">
+                    <table>
+                            <tr>
+                                <td><p>Максимальна кількість ітерацій:</p></td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td><p>k<sub>max</sub>=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Максимальна розмірність задачі:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>d<sub>max</sub>=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Максимальна розмірність рою:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>s<sub>max</sub>=</</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Ітераційний параметр:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>w=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Когнітивний параметр:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>c <sub>1</sub>=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Соціальний параметр:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>c <sub>2</sub>=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                               <tr>
+                                <td><p>Кількість повторів:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p>n=</p></td>
+                                <td><input type="text"></td>
+                            </tr>
+                               <tr>
+                                <td><p>критерій зупинки:</p></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><p> </p></td>
+                                <td><select id="aco-mode">
+                                        <option value="acs">Моделювання колонії мурашок</option>
+                                        <option value="elitist">елітарний</option>
+                                        <option value="maxmin" selected="selected">Max-Min</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td> <button>Розв'язок</button></td>
+                                <td> </td>
+                            </tr>
+                    </table>   
+                </div> -->
+                <div class="tabContent">
+                    <div id="aco" class="">
+                            <div id="aco-canvas" style="border:1px solid #ccc" >
+                                 <button id="start-search-btn">Start</button> <button id="clear-graph">Clear</button>
+                            </div>
+                           
+                            <div class="hr vpad"></div>
+                            <div class="param">
+                                <table>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr style="display:none;" class="aco-info">
+                                        <td>Взаємодія: </td><td id="iteration-info"></td>
+                                    </tr>
+                                    <tr style="display:none;" class="aco-info">
+                                        <td>Найкраща відстань: </td><td id="best-distance"></td>
+                                    </tr>
+                                    <tr id="aco-buttons">
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </table>
+                                <br />
+                                <table id="aco-params">
+                                    <tr>
+                                        <td colspan="2"><b>Конфігурація</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Режим ACO (оптимізація мурашки колонії): </td>
+                                        <td>
+                                            <select id="aco-mode">
+                                                <option value="acs">Моделювання колонії мурашок</option>
+                                                <option value="elitist">елітарний</option>
+                                                <option value="maxmin" selected="selected">Max-Min</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr style="display:none;" id="elitist-weight-input">
+                                        <td>Елітичний вага: </td>
+                                        <td>
+                                            <select id="elitist-weight">
+                                                <option value="0.1">0.1</option>
+                                                <option value="0.5">0.5</option>
+                                                <option value="1">1</option>
+                                                <option value="2" selected="selected">2</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <br /><br />
+                                        </td>
+                                    </tr>
+                                    <tr class="maxmin-params">
+                                        <td>Максимальний феромон: </td><td class="light-text">(1 * 
+                                            Маса вкладу феромонів) / Найкраща відстань</td>
+                                    </tr>
+                                    <tr class="maxmin-params">
+                                        <td>Феромон мінімальний: </td><td class="light-text">Максимум Феромонів * Коефіцієнт масштабування</td>
+                                    </tr>
+                                    <tr class="maxmin-params">
+                                        <td>Мінімальний масштабний коефіцієнт: </td><td>
+                                        <select id="min-scalar">
+                                            <option value="0.0001">0.0001</option>
+                                            <option value="0.001" selected="selected">0.001</option>
+                                            <option value="0.01">0.01</option>
+                                            <option value="0.1">0.1</option>
+                                        </select><br /><br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Розмір колонії: </td><td>
+                                        <select id="colony-size">
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30" selected="selected">30</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                            <option value="200">200</option>
+                                        </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Max ітерації: </td>
+                                        <td>
+                                            <select id="max-iterations">
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                                <option value="200" selected="selected">200</option>
+                                                <option value="300">300</option>
+                                                <option value="500">500</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Альфа: </td>
+                                        <td>
+                                            <select id="alpha">
+                                                <option value="1" selected="selected">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Бета: </td>
+                                        <td>
+                                            <select id="beta">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3" selected="selected">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rho: </td>
+                                        <td>
+                                            <select id="rho">
+                                                <option value="0">0</option>
+                                                <option value="0.001">0.001</option>
+                                                <option value="0.01">0.01</option>
+                                                <option value="0.05">0.05</option>
+                                                <option value="0.1" selected="selected">0.1</option>
+                                                <option value="0.2">0.2</option>
+                                                <option value="0.5">0.5</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Початковий феромон: </td>
+                                        <td>
+                                            <select id="init-pheromone">
+                                                <option value="0">0</option>
+                                                <option value="1" selected="selected">1</option>
+                                                <option value="2">2</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Маса вкладу феромонів: </td>
+                                        <td>
+                                            <select id="pheromone-deposit-weight">
+                                                <option value="1" selected="selected">1</option>
+                                                <option value="2">2</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                                </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="bees_algo">
+                <h2>Приклади роботи БА</h2>
+                <div id="tabs2">
+                    <div class="tab2 whiteborder">Функція користувача</div>
+                    <div class="tab2">Тестова функція</div>
+                    <!-- <div class="tab2">Параметри</div> -->
+                    <div class="tab2">Приклад</div>
+
+                    <div class="tabContent2">
+                        <table>
+                                <tr>
+                                    <td><p>Функція</p></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><p>F=</p></td>
+                                    <td><input type="text" id="f"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Глобальне значення</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>g=</p></td>
+                                    <td><input type="text" id="global" value="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Персональне значення</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>p=</p></td>
+                                    <td><input type="text" id="person" value="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Інерція агентів</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>i=</p></td>
+                                    <td><input type="text" id="inerc" value="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Розмірність задачі</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>d=</p></td>
+                                    <td><input type="text" id="rozm_d" value="100"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Розмірність рою</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>s=</p></td>
+                                    <td><input type="text" id="roz_roy_s" value="60"></td>
+                                </tr>                                <tr>
+                                    <td><p>Простір пошуку</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="text" id="pp"></td>
+                                </tr>
+                                <tr>
+                                    <td> <button>Розв'язок</button></td>
+                                    <td> </td>
+                                </tr>
+                        </table>       
+                    </div>
+                    <div class="tabContent2" id="content">
+                        <div class="tabl">
+                            <table>
+                                <tr>
+                                    <td><p>Функція</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>F=</p></td>
+                                    <td><select name="" id="sel2">
+                                            <option id="sfera2" value="">Сферична</option>
+                                            <option id="elip2" value="">Еліптична</option>
+                                            <option id="shef2" value="">Швефела </option>
+                                            <option id="rozen2" value="">Розенброка</option>
+                                            <option id="rastr2" value="">Растригіна</option>
+                                        </select></td>
+                                    <td><td><img class="form" id="for_img2" src="" alt="formula"></td></td>
+                                    <!-- <td><img class="form" id="for_img" src="" alt="formula"></td>
+                                    <!-- <td><td><img class="graf" id="funk_img" src="" alt="grafic"></td></td> -->
+                                </tr>
+                                <tr>
+                                    
+                                    <!-- <td><img class="graf" id="funk_img" src="" alt="grafic"></td> -->
+                                </tr>
+                                <tr>
+                                    <!-- <td><img class="form" id="for_img" src="" alt="formula"></td> -->
+                                    <td><td><img class="graf" id="funk_img2" src="" alt="grafic"></td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Глобальне значення</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>g=</p></td>
+                                    <td><input type="text" id="global" value="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Персональне значення</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>p=</p></td>
+                                    <td><input type="text" id="person" value="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Інерція агентів</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>i=</p></td>
+                                    <td><input type="text" id="inerc" value="0.1"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Розмірність задачі</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>d=</p></td>
+                                    <td><input type="text" id="rozm_d" value="100"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Розмірність рою</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>s=</p></td>
+                                    <td><input type="text" id="roz_roy_s" value="60"></td>
+                                </tr>
+                                <!-- <tr>
+                                    <td><p>Простір пошуку</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="text" id="pros_posh"></td>
+                                </tr> -->
+                                <tr>
+                                    <td> <button onclick="run();">Розв'язок</button></td>
+                                    <td> </td>
+                                </tr>
+                            </table>  
+                        </div>
+                        <div class="can">
+                            <canvas id="c1" width="800" height="800" ></canvas>
+                            <button id="bee_run" onclick="run();">RUN</button> 
+                            <button id="bee_stop" onclick="stop();">stop</button> 
+                        </div>                  
+                    </div>
+<!--                     <div class="tabContent2">
+                        <table>
+                                <tr>
+                                    <td><p>Максимальна кількість ітерацій:</p></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td><p>k<sub>max</sub>=</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Максимальна розмірність задачі:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>d<sub>max</sub>=</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Максимальна розмірність рою:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>s<sub>max</sub>=</</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Ітераційний параметр:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>w=</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Когнітивний параметр:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>c <sub>1</sub>=</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Соціальний параметр:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>c <sub>2</sub>=</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                   <tr>
+                                    <td><p>Кількість повторів:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p>n=</p></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                   <tr>
+                                    <td><p>критерій зупинки:</p></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><p> </p></td>
+                                    <td><select id="aco-mode">
+                                            <option value="acs">Моделювання колонії мурашок</option>
+                                            <option value="elitist">елітарний</option>
+                                            <option value="maxmin" selected="selected">Max-Min</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td> <button>Розв'язок</button></td>
+                                    <td> </td>
+                                </tr>
+                        </table> 
+                    </div> -->
+                    <div class="tabContent2">
+
+                    </div>
+                </div>
+        </section>    
+
+
+        <footer>
+<!--             <h4>Всі права захищено</h4>
+ -->            <p>Черкаси, 2017</p>
+            <p>slavasalijj@gmail.com</p>
+        </footer>
+
+
+        <div class="MoveUp">
+             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+
+
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/ant.js"></script>
+        <script type="text/javascript" src="js/bee.js"></script>
+
+        <script>
+              new WOW().init();
+        </script>
+            <script>
+              $(document).ready(
+                  function() {
+                      $("html").niceScroll({cursorcolor:"#000"});
+                  }
+              );
+            </script>
+
+<!--         <script>
+              $(document).ready(function(){
+                  $("nav").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                      top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1500);
+                  });
+                });
+            </script> -->
+    </body>
+</html>

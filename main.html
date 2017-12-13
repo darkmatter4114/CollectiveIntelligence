@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Collective Intelligence</title>
+    	
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    	<link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="img/ant.jpg" type="img/ico.jpg">
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+        <script type="text/javascript" src="js/Chart.min.js"></script>
+        <script src="js/"></script>
+        
+    </head>
+    <body>
+
+    	<header>
+    	
+    	</header>
+
+
+        <nav>
+            <ul class="main_menu">
+                <li class="menu_li"><a href="main.html">Головна</a></li>
+                <li class="menu_li"><a href="info.html" id = "zah_info">Загальна інформація</a>
+                    <ul class="secont_ul">
+                        <li><a href="info.html#ant_algo" id = "ant_algo" text="Мурашиний алгоритм">Мурашиний алгоритм</a></li>
+                        <li><a href="info.html#bee_algo" id = "bee_algo" text="Бджолиний алгоритм">Бджолиний алгоритм</a></li>
+                        <li><a href="info.html#bats_algo" id = "bats_algo" text="Алгоритм алгоритм">Алгоритм кажанів</a></li>
+                    </ul>
+                </li>
+                <li class="menu_li"><a href="#work_example">Приклади роботи</a>
+                    <ul class="secont_ul_second">
+                        <li><a href="index.html#ants_algo">Мурашиний алгоритм</a></li>
+                        <li><a target="_self" href="index.html#bees_algo">Бджолиний алгоритм</a></li>
+                        <li><a href="#">Алгоритм кажанів</a></li>
+                    </ul>
+                </li>
+                <li class="menu_li"><a href="#">Оптимізаційні задачі</a></li>
+                <li class="menu_li"><a href="#d">Про розробника</a></li>
+            </ul>
+        </nav>
+
+
+<section id="helo">
+<h2>Колективний інтелект</h2>
+<div id="img_h">
+    <img src="img/ant.jpg" alt="ant">
+    <img src="img/bee.jpg" alt="bee">
+    <img src="img/bat-swarm.jpg" alt="bat">
+    <img src="img/fish.jpg" alt="fish">
+    <img src="img/wolf.jpg" alt="wolf">
+</div>
+    <p>Колекти́вний інтеле́кт (англ. Swarm intelligence) описує комплексну колективну поведінку децентралізованої системи, що самоорганізується. Розглядається в теорії штучного інтелекту як метод оптимізації. Термін був уведений Херардо Бені й Ван Цзином в 1989 році, у контексті системи клітинних роботів. Інколи колективний інтелект ще називають ройовим інтелектом.</p> 
+
+    <p>Із точки зору інформатики, колективний інтелект — це частина комп'ютерних наук, яка проектує та вивчає ефективні числові методи вирішення проблем у спосіб, схожий з поведінкою «колективу» живих організмів. Досягнення в цій галузі, а це власне розроблені алгоритми, застосовуються перш за все в задачах комбінаторної оптимізації та для розв'язування задачі комівояжера.</p> 
+
+    <p>Системи колективного інтелекту, як правило, складаються із множини агентів (багато агентна система), що локально взаємодіють між собою й із навколишнім середовищем. Самі агенти зазвичай досить прості, але всі разом, локально взаємодіючи, створюють так званий колективний інтелект. Прикладом у природі може служити колонія мурах, рій бджіл, зграя кажанів, косяк риб.
+    </p>
+</section>
+
+
+
+        <footer>
+        <div class="container">
+                <h4>Всі права захищено</h4>
+                <p>Черкаси, 2017</p>
+                <p>slavasalijj@gmail.com</p>
+        </div>
+            
+        </footer>
+
+
+        <div class="MoveUp">
+             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </div>
+
+
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <script>
+              new WOW().init();
+        </script>
+            <script>
+              $(document).ready(
+                  function() {
+                      $("html").niceScroll({cursorcolor:"#000"});
+                  }
+              );
+            </script>
+
+<!--         <script>
+              $(document).ready(function(){
+                  $("nav").on("click","a", function (event) {
+                    event.preventDefault();
+                    var id  = $(this).attr('href'),
+                      top = $(id).offset().top;
+                    $('body,html').animate({scrollTop: top}, 1500);
+                  });
+                });
+            </script> -->
+    </body>
+</html>
